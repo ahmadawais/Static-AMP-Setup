@@ -1,0 +1,24 @@
+{
+  "name": "static-amp-setup",
+  "version": "0.0.1",
+  "description": "Static AMP Setup",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmadawais/Static-AMP-Setup.git"
+  },
+  "author": "Ahmad Awais (https://AhmadAwais.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmadawais/Static-AMP-Setup/issues"
+  },
+  "homepage": "https://github.com/ahmadawais/Static-AMP-Setup#readme",
+  "devDependencies": {
+    "clean-css": "^4.1.9",
+    "concurrently": "^3.5.1",
+    "node-watch": "^0.5.5"
+  },
+  "scripts": {
+    "start": "concurrently \"node ./bin/inject-styles.js\" \"python -m SimpleHTTPServer\""
+  }
+}
